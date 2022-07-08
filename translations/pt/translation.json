@@ -1,6 +1,6 @@
 {
   "fes": {
-    "autoplay": "Uma mídia não foi autorizada a reproduzir (de '{{src}}'), provavelmente devido à política de reprodução automática do navegador.\n\n+ Para mais informações, visite: {{url}}",
+    "autoplay": "A mídia não foi autorizada a reproduzir (de '{{src}}'), provavelmente devido à política de reprodução automática do navegador.\n\n+ Para mais informações, visite: {{url}}",
     "checkUserDefinedFns": "Você pode ter escrito {{name}} em vez de {{actualName}} acidentalmente. Se não for intencional, corrija-o.",
     "fileLoadError": {
       "bytes": "Ocorreu um problema ao carregar seu arquivo. {{suggestion}}",
@@ -25,28 +25,28 @@
         "cannotAccess": "\n{{location}} \"{{symbol}}\" é usado antes da declaração. Certifique-se de que você declarou a variável antes de usá-la.\n\n+ Para mais informações, visite: {{url}}",
         "notDefined": "\n{{location}} \"{{symbol}}\" não foi definido no escopo atual. Se você o definiu em seu código, verifique o escopo e se a escrita e a caixa estão corretas (JavaScript diferencia maiúsculas de minúsculas).\n\n+ Para mais informações, visite: {{url}}"
       },
-      "stackSubseq": "└[{{location}}] \n\t Chamado pela linha {{line}} em {{func}}()\n",
-      "stackTop": "┌[{{location}}] \n\t Erro na linha {{line}} em {{func}}()\n",
+      "stackSubseq": "+[{{location}}] \n\t Chamado pela linha {{line}} em {{func}}()\n",
+      "stackTop": "+[{{location}}] \n\t Erro na linha {{line}} em {{func}}()\n",
       "syntax": {
-        "badReturnOrYield": "\nErro de Sintaxe - return está fora de uma função. Verifique se não faltam colchetes, pois return deve ficar dentro de uma função.\n\n+ Para mais informações, visite: {{url}}",
-        "invalidToken": "\nErro de Sintaxe - Foi encontrado um símbolo que o JavaScript não reconheceu ou que está em um local inesperado.\n\n+ Para mais informações, visite: {{url}}",
-        "missingInitializer": "\nErro de Sintaxe - Uma variável constante é declarada mas não é inicializada. Em JavaScript, é necessário que uma constante seja inicializada. Um valor tem que ser especificado na mesma instrução que declara a variável. Consulte o número da linha na mensagem de erro e atribua um valor à variável constante.\n\n+ Para mais informações, visite: {{url}}",
-        "redeclaredVariable": "\nErro de Sintaxe - \"{{symbol}}\" é declarado mais de uma vez. JavaScript não permite que uma variável seja declarada mais de uma vez. Procure por uma redeclaração na linha que contêm o erro.\n\n+ Para mais informações, visite: {{url}}",
-        "unexpectedToken": "\nErro de Sintaxe - Símbolo presente em um local inesperado.\nGeralmente é um erro de digitação. Verifique o número da linha na mensagem de erro para ver se há algo faltando/a mais.\n\n+ Para mais informações, visite: {{url}}"
+        "badReturnOrYield": "\nErro de Sintaxe - return está do lado de fora de uma função. Verifique se não está faltando os pares de chaves, para que assim o return fique dentro da função.\n\n+ Para mais informações, visite: {{url}}",
+        "invalidToken": "\nErro de Sintaxe - Foi encontrado um símbolo que o JavaScript não reconheceu ou não esperava naquele local.\n\n+ Para mais informações, visite: {{url}}",
+        "missingInitializer": "\nErro de Sintaxe - Uma variável const é declarada mas não é inicializada. Em JavaScript, é necessário que uma variável constante seja inicializada. Um valor tem que ser especificado na mesma instrução que declara a variável. Consulte o número da linha na mensagem de erro e atribua um valor à variável const.\n\n+ Para mais informações, visite: {{url}}",
+        "redeclaredVariable": "\nErro de Sintaxe - \"{{symbol}}\" está sendo redeclarado. Dependendo do comando usado, JavaScript não permite que uma variável seja declarada mais de uma vez. Procure por uma redeclaração na linha que contém o erro.\n\n+ Para mais informações, visite: {{url}}",
+        "unexpectedToken": "\nErro de Sintaxe - Símbolo presente em um local inesperado.\nGeralmente é um erro de digitação. Verifique o número da linha na mensagem de erro para ver se há algo faltando ou a mais.\n\n+ Para mais informações, visite: {{url}}"
       },
       "type": {
-        "constAssign": "\n{{location}} Uma variável constante está sendo reatribuída. Em JavaScript, não é permitido atribuir um novo valor à uma constante. Se você que atribuir novos valores à uma variável, certifique-se de que ela é declarada como var ou let.\n\n+ Para mais informações, visite: {{url}}",
-        "notfunc": "\n{{location}} Não foi possível chamar \"{{symbol}}\" como uma função.\nVerifique o seu tipo e o escopo e se a escrita e a caixa estão corretas (JavaScript diferencia maiúsculas de minúsculas).\n\n+ Para mais informações, visite: {{url}}",
-        "notfuncObj": "\n{{location}} Não foi possível chamar \"{{symbol}}\" como uma função.\nVerifique se \"{{obj}}\" contêm \"{{symbol}}\". Verifique o seu tipo e o escopo e se a escrita e a caixa estão corretas (JavaScript diferencia maiúsculas de minúsculas).\n\n+ Para mais informações, visite: {{url}}",
-        "readFromNull": "\n{{location}} Não foi possível ler a propiedade de null. Em JavaScript o valor null indica que um objeto não tem valor.\n\n+ Para mais informações, visite: {{url}}",
-        "readFromUndefined": "\n{{location}} Não foi possível ler a propiedade undefined. Verifique o número da linha na mensagem de erro e certifique-se de que a variável relevante foi definida.\n\n + Para mais informações, visite: {{url}}"
+        "constAssign": "\n{{location}} Uma variável const está sendo reatribuída. Em JavaScript, não é permitido atribuir um novo valor à uma constante. Se você que atribuir novos valores à uma variável, certifique-se de que ela é declarada como var ou let.\n\n+ Para mais informações, visite: {{url}}",
+        "notfunc": "\n{{location}} Não foi possível chamar \"{{symbol}}\" como uma função.\nVerifique se a escrita, a caixa (JavaScript diferencia maiúsculas de minúsculas) e o seu tipo estão corretos.\n\n+ Para mais informações, visite: {{url}}",
+        "notfuncObj": "\n{{location}} Não foi possível chamar \"{{symbol}}\" como uma função.\nVerifique se \"{{obj}}\" contém \"{{symbol}}\" nele. E verifique se a escrita, a caixa (JavaScript diferencia maiúsculas de minúsculas) e o seu tipo estão corretos.\n\n+ Para mais informações, visite: {{url}}",
+        "readFromNull": "\n{{location}} O primitivo null é um objeto especial que não possui propriedades. Em JavaScript null serve para indicar que uma variável ou propriedade não tem um valor concreto no momento.\n\n+ Para mais informações, visite: {{url}}",
+        "readFromUndefined": "\n{{location}} O primitivo undefined é um valor especial que não possui propriedades. Em JavaScript undefined serve para indicar que uma variável ou propriedade ou é inexistente ou não foi inicializada. Verifique o número da linha na mensagem de erro e certifique-se de que a variável relevante foi definida.\n\n + Para mais informações, visite: {{url}}"
       }
     },
-    "libraryError": "{{location}} Um erro com a mensagem \"{{error}}\" ocorreu dentro da biblioteca p5js quando {{func}} foi chamado. Se nada indica o contrário, pode ser um problema com os argumentos passados para {{func}}.",
+    "libraryError": "{{location}} Um erro com a mensagem \"{{error}}\" ocorreu dentro da biblioteca p5.js quando {{func}} foi chamado. Se nada foi dito o contrário, pode ser um problema com os argumentos passados para {{func}}.",
     "location": "[{{file}}, linha {{line}}]",
     "misspelling": "{{location}} Você pode ter escrito \"{{name}}\" em vez de \"{{actualName}}\". Por favor corrija para {{actualName}} se você deseja usar o {{type}} from p5.js.",
     "misspelling_plural": "{{location}} Você pode ter escrito \"{{name}}\" acidentalmente.\nTalvez você quis dizer: \n{{suggestions}}",
-    "misusedTopLevel": "Você tentou usar {{symbolName}} {{symbolType}} de p5js? Se sim, você talvez queira movê-lo para a função setup() do seu sketch.\n\n+ Para mais informações, visite: {{url}}",
+    "misusedTopLevel": "Você tentou usar {{symbolName}} {{symbolType}} de p5.js? Se sim, você talvez queira movê-lo para a função setup() do seu sketch.\n\n+ Para mais informações, visite: {{url}}",
     "positions": {
       "p_1": "primeiro",
       "p_10": "décimo",
@@ -61,12 +61,12 @@
       "p_8": "oitavo",
       "p_9": "nono"
     },
-    "pre": "\n🌸 p5.js diz: {{message}}",
+    "pre": "\n?? p5.js diz: {{message}}",
     "sketchReaderErrors": {
-      "reservedConst": "você usou uma variável reservada por p5.js \"{{symbol}}\" lembre-se de alterar o nome da variável.\n\n+ Para mais informações, visite: {{url}}",
-      "reservedFunc": "você usou uma função reservada por p5.js \"{{symbol}}\" lembre-se de alterar o nome da função.\n\n+ Para mais informações, visite: {{url}}"
+      "reservedConst": "Você usou a variável reservada do p5.js \"{{symbol}}\". Mude o nome dessa variável.\n\n+ Para mais informações, visite: {{url}}",
+      "reservedFunc": "Você usou a função reservada do p5.js \"{{symbol}}\". Mude o nome dessa função.\n\n+ Para mais informações, visite: {{url}}"
     },
     "welcome": "Bem-vindo! Eu sou o seu amigo depurador. Para me desligar, mude para p5.min.js.",
-    "wrongPreload": "{{location}} Ocorreu um erro com a mensagem \"{{error}}\" dentro da biblioteca p5js quando \"{{func}}\" foi chamado. Se nada indica o contrário, pode ser devido à \"{{func}}\" ser chamado pelo preload. Nada além de funções load (loadImage, loadJSON, loadFont, loadStrings, etc.) devem estar dentro da função preload."
+    "wrongPreload": "{{location}} Ocorreu um erro com a mensagem \"{{error}}\" dentro da biblioteca p5.js quando \"{{func}}\" foi chamado. Se nada foi dito o contrário, pode ser devido ao \"{{func}}\" ter sido chamado pelo preload(). Nada além de funções de load (loadImage, loadJSON, loadFont, loadStrings, etc.) devem estar dentro da função preload()."
   }
 }
